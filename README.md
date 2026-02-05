@@ -1,22 +1,24 @@
-# EXPERIMENT-01-INTERFACTING-DIGITAL-OUTPUT-WITH-EDGE-DEVICE---(RASPBERRYPI-PICO)
+# EXPERIMENT-01-INTERFACTING-DIGITAL-OUTPUT-WITH-EDGE-DEVICE---(RASPBERRYPI-PI4)
 ### NAME 
 ### DEPARTMENT 
 ### ROLL NO 
 ### DATE OF EXPERIMENT 
 
 ### AIM
-To interface a digital output device (LED) with the Raspberry Pi Pico and control it using MicroPython.
+To interface a digital output device (LED) with the Raspberry Pi 4 and control it using Python.
 
 ## APPARATUS REQUIRED
-Raspberry Pi Pico
+Raspberry Pi 4
 LED (Light Emitting Diode)
 330Ω Resistor
+IR Sensor
 Breadboard
 Jumper Wires
 USB Cable
  ## THEORY
 
- ![image](https://github.com/user-attachments/assets/abeabf63-f321-471e-a991-3adaa9043a8b)
+![Raspberry Pi Pin](https://github.com/user-attachments/assets/19e5a1e7-cb46-4909-ba59-e4f4560cae03)
+
 
 
 
@@ -24,7 +26,7 @@ USB Cable
  
  
  
- ### FIGURE-01 RASPI PICO PINOUT DIAGRAM 
+ ### FIGURE-01 RASPI PI 4 PINOUT DIAGRAM 
 
 
 
@@ -33,15 +35,25 @@ The Raspberry Pi Pico is a compact microcontroller board featuring a 40-pin layo
 
 
 ## Working Principle:
-
-The LED is connected to one of the GPIO pins of the Pico.
-The MicroPython script sets the GPIO pin HIGH to turn the LED ON and LOW to turn it OFF.
+Experiment 1A
+The LED is connected to one of the GPIO pins of the Raspberry Pi 4.
+The Python script sets the GPIO pin HIGH to turn the LED ON and LOW to turn it OFF.
 CIRCUIT DIAGRAM
 Connect the anode (longer leg) of the LED to GP15 via a 330Ω resistor.
 Connect the cathode (shorter leg) of the LED to GND (ground).
 
+Experiment 1B
+The LED is connected to one of the GPIO pins of the Raspberry Pi 4.
+The IR sensor is connected one of the GPIO pins in Raspberry Pi 4.
+The Python script sets the GPIO pin HIGH to turn the LED ON and LOW to turn it OFF based on the IR sensor.
+CIRCUIT DIAGRAM
+Connect the anode (longer leg) of the LED to any one GPIO via a 330Ω resistor.
+Connect the cathode (shorter leg) of the LED to GND (ground).
+Connect the IR sensor Vcc to any +5V.
+Connect the IR sensor GND to any GND.
+Connect the IR sensor OUT to any one GPIO. 
 
-## PROGRAM (MicroPython)
+## PROGRAM (Python)
 ```
 
 
@@ -53,7 +65,7 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 ````
 
 ### OUPUT  
-
+Experiment 1A
 
 # FIGURE -02 ADD TITILE HERE 
 
@@ -61,7 +73,14 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 
 # FIGURE -04 ADD TITLE HERE 
 
+Experiment 1B
+
+# FIGURE -05 ADD TITILE HERE 
+
+#  FIGURE -06 ADD TITILE HERE 
+
+# FIGURE -07 ADD TITLE HERE 
 
  
 ## RESULTS
-The LED connected to the Raspberry Pi Pico successfully turns ON and OFF at  user defined time  confirming the proper interfacing of a digital output.
+The LED connected to the Raspberry Pi 4 successfully turns ON and OFF at  user defined time  confirming the proper interfacing of a digital output.
